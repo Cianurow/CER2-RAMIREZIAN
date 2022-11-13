@@ -1,0 +1,46 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css");
+
+.bg-green {
+    background-color:#5cc7b2;
+}
+
+#login {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.informacion {
+    padding-left: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.caja {
+    background-color: #5cc7b2;
+}
+
+#correspondencia {
+    margin-top: 20px;    
+}
+
+#buscar {
+    margin-top: 20px;
+}
+
+.tittle { 
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#home {
+    height: 100vh;
+    background: linear-gradient(90deg, #D7E1EC, #FFFFFF);
+}
+
+.iconbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
