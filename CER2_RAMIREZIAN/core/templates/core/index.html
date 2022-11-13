@@ -3,14 +3,25 @@
 
 {% block content %}
   <div id="home" class="container-fluid">
-    <div>
-      <h1 class="tittle">Gestión de
-        correspondencia </h1>
+    <div id="portada" class="row">
+      <div class="d-none d-md-block col-1"></div>
+      <div class="d-none d-md-block col-5">
+        {% load static %}
+        <link rel="stylesheet" href={% static 'core/img/portada.png' %}>
+        <img src={% static 'core/img/portada.png' %} class="" alt="cajas">
+      </div>
+      <div class="col-5 tittle">
+        <h1>Gestión de correspondencia </h1>
+      </div>
+      <div class=" d-none d-md-block col-1"></div>
     </div>
+
 
     <div id="buscar" class="row">
         <div class="col-2"></div>
         <div class="col-8 search">
+          <h1>Lista de correspondencias recibidas por conserjería</h1>
+
           <form method="get">
             <div id="custom-search-input">
               <div class="input-group col-md-12">
@@ -53,7 +64,8 @@
                       {% endif %}
 
                       <p>Residencia: {{ correspondencia.nroResidencia }}</p>
-                      <p class="card-text"><small class="">Recepción: {{ correspondencia.fechaRecepcion }}</small></p>
+                      <p class="card-text"><small class="">Recepcionado por {{correspondencia.conserje}} <br>
+                        la fecha {{ correspondencia.fechaRecepcion }}</small></p>
                     
                   </div>
                 </div>

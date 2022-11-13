@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css");
 
 .bg-green {
     background-color:#5cc7b2;
+    width: 100%;
+}
+
+#logo {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #login {
@@ -10,7 +18,6 @@
 }
 
 .informacion {
-    padding-left: 60px;
     align-items: center;
     justify-content: center;
 }
@@ -20,22 +27,26 @@
     background-color: #5cc7b2;
 }
 
+
+#portada {
+    padding-top: 40px;
+}
+
 #correspondencia {
-    margin-top: 20px;    
+    padding-top: 60px;    
 }
 
 #buscar {
-    margin-top: 20px;
+    padding-top: 40px;
 }
 
 .tittle { 
-    padding-top: 20px;
-    text-align: center;
+    padding-top: 160px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #home {
-    height: 100vh;
+    height: calc(100vh-56px);
     background: linear-gradient(90deg, #D7E1EC, #FFFFFF);
 }
 
